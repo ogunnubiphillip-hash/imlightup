@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Syne:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-bright":"#3a3939","surface-variant":"#353534","on-secondary-fixed":"#291800","background":"#131313","secondary-container":
+"#c5830c","tertiary":"#d4d0c5","on-secondary-fixed-variant":"#633f00","on-tertiary-container":"#48463f","surface-tint":"#71a3c1","surface-container":"#201f1f","primary-fixed":
+"#ffddb4","surface":"#131313","secondary-fixed":"#ffddb4","surface-container-low":"#1c1b1b","outline":"#9d8e7e","surface-container-lowest":"#0e0e0e","on-tertiary-fixed":"#1d1c15",
+"on-surface-variant":"#d4c4b2","on-tertiary-fixed-variant":"#49473f","outline-variant":"#504537","on-surface":"#e5e2e1","inverse-surface":"#e5e2e1","tertiary-container":"#b8b4aa",
+"surface-container-highest":"#353534","error":"#ffb4ab","on-primary-fixed":"#291800","primary-fixed-dim":"#71a3c1","primary-container":"#71a3c1","on-secondary-container":"#3c2500",
+"on-error-container":"#ffdad6","error-container":"#93000a","tertiary-fixed":"#e7e2d8","secondary-fixed-dim":"#71a3c1","on-secondary":"#452b00","secondary":"#71a3c1","on-primary":
+"#452b00","surface-dim":"#131313","primary":"#71a3c1","inverse-primary":"#825500","on-error":"#690005","on-tertiary":"#32302a","on-background":"#e5e2e1","inverse-on-surface":"#313030",
+"surface-container-high":"#2a2a2a","on-primary-fixed-variant":"#633f00","on-primary-container":"#623f00","tertiary-fixed-dim":"#cac6bc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem",
+"xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"4rem","space-lg":"2.5rem","gutter-mobile":"1rem","margin":"4rem","space-md":"1.5rem","space-sm":"1rem","gutter":"2rem","margin-mobile":
+"1.5rem","space-xs":"0.5rem"},"fontFamily":{"display-lg-mobile":["Syne"],"display-xl":["Syne"],"body-lg":["Manrope"],"body-sm":["Manrope"],"headline-lg":["Syne"],"body-md":["Manrope"],"display-lg":["Syne"],
+"label-uppercase":["Manrope"],"label-regular":["Manrope"],"headline-sm":["Syne"],"headline-md":["Syne"],"display-xl-mobile":["Syne"]},"fontSize":{"display-lg-mobile":["36px",{"lineHeight":"42px","letterSpacing":
+"-0.01em","fontWeight":"600"}],"display-xl":["84px",{"lineHeight":"92px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"30px","letterSpacing":"0.01em","fontWeight":"300"}],"body-sm":["13px",{"lineHeight":"20px",
+"letterSpacing":"0.02em","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":
+"-0.02em","fontWeight":"600"}],"label-uppercase":["11px",{"lineHeight":"16px","letterSpacing":"0.22em","fontWeight":"600"}],"label-regular":["13px",{"lineHeight":"18px","letterSpacing":"0.05em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"0em","fontWeight":"500"}],"display-xl-mobile":["44px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script>
+<header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-md border-b border-outline-variant/30">
+
+    <div class="h-20 w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-space-sm">
+            <a class="flex items-center gap-3 group" data-path="work" href="index.html">
+                <img
+                    alt="IM lightup Logo"
+                    class="h-8 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+                    src="images/demo.png"
+                />
+                <span class="font-headline-sm text-headline-sm tracking-wide text-on-surface uppercase"></span>
+            </a>
+        </div>
+
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary border-b border-primary">
+
+            <a
+                class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface tracking-[0.22em] transition-colors duration-200 py-1"
+                data-path="work"
+                href="index.html"
+            >
+                Home
+            </a>
+
+            <a
+                class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface tracking-[0.22em] transition-colors duration-200 py-1"
+                data-path="services"
+                href="services.html"
+            >
+                Services
+            </a>
+
+            <a
+                aria-current="page"
+                class="font-label-uppercase uppercase tracking-[0.22em] transition-colors duration-200 py-1 text-primary border-b border-primary"
+                data-path="the-experience"
+                href="experience.html"
+            >
+                The Experience
+            </a>
+
+            <a
+                class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface tracking-[0.22em] transition-colors duration-200 py-1"
+                data-path="about"
+                href="about.html"
+            >
+                About
+            </a>
+
+            <a
+                class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface tracking-[0.22em] transition-colors duration-200 py-1"
+                data-path="contact"
+                href="contact.html"
+            >
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="flex items-center gap-space-sm">
+
+            <!-- DESKTOP QUOTE BUTTON -->
+            <a
+                class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded border border-[#71a3c1] bg-[#71a3c1] font-label-uppercase text-label-uppercase uppercase text-white tracking-[0.2em] transition-all duration-300 hover:bg-black hover:text-[#71a3c1] hover:border-[#71a3c1] hover:shadow-[0_0_24px_rgba(113,163,193,0.35)] cta-heartbeat"
+                data-path="get-a-quote"
+                href="#"
+            >
+                Get a Quote
+            </a>
+
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                id="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                class="lg:hidden flex items-center justify-center w-11 h-11 text-on-surface"
+            >
+
+                <span class="mobile-menu-icon flex flex-col gap-1.5">
+                    <span class="block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <div
+        id="mobile-menu"
+        class="lg:hidden hidden border-t border-outline-variant/30 bg-surface-container-lowest/95 backdrop-blur-md"
+    >
+
+        <nav class="flex flex-col px-margin-mobile py-5">
+
+            <a
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface-variant"
+                href="index.html"
+            >
+                Home
+            </a>
+
+            <a
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface-variant"
+                href="services.html"
+            >
+                Services
+            </a>
+
+            <a
+                aria-current="page"
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface"
+                href="experience.html"
+            >
+                The Experience
+            </a>
+
+            <a
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface-variant"
+                href="about.html"
+            >
+                About
+            </a>
+
+            <a
+                
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface-variant"
+                href="contact.html"
+            >
+                Contact
+            </a>
+
+            <a
+                class="mt-3 inline-flex items-center justify-center px-6 py-3 rounded border border-[#71a3c1] bg-[#71a3c1] text-white font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] cta-heartbeat"
+                href="contact.html"
+            >
+                Get a Quote
+            </a>
+
+        </nav>
+
+    </div>
+
+</header><main class="w-full pt-20 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: MANIFESTO & HERO HEADER -->
+<section class="relative w-full overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-32 bg-surface-container-lowest reveal-left">
+<!-- Atmospheric Ambient Glow -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[340px] bg-gradient-to-b from-primary-container/15 via-secondary-container/5 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin relative z-10">
+<!-- Section Tag -->
+<div class="flex items-center gap-3 mb-6">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-uppercase text-label-uppercase uppercase text-primary tracking-[0.25em] reveal-left">02 / The Methodology</span>
+<span class="h-px w-12 bg-outline-variant/40"></span>
+</div>
+<!-- Main Typography & Editorial Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<div class="lg:col-span-8 space-y-6">
+<h1 class="font-display-xl text-display-xl-mobile md:text-display-lg lg:text-display-xl uppercase tracking-tighter text-on-surface reveal-left">
+            We don’t just light venues. <br/>
+<span class="text-primary italic font-serif tracking-normal">We shape how they feel.</span>
+</h1>
+</div>
+<div class="lg:col-span-4 space-y-4 lg:pb-3">
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant font-light leading-relaxed">
+            At the intersection of thoughtful design and technical execution, lighting becomes more than just equipment. It is the essential element that sets the mood, completely transforms your venue, and makes every moment of your event truly memorable.</p>
+<div class="flex items-center gap-6 pt-2">
+<div class="flex flex-col">
+<span class="font-display-lg text-headline-lg text-on-surface">Perfect <span class="text-primary text-headline-sm">Ambiance</span></span>
+<span class="font-label-uppercase text-label-uppercase text-outline uppercase">Balancing Light & Shadow</span>
+</div>
+<div class="w-px h-8 bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-display-lg text-headline-lg text-primary">True-to-Life <span class="text-on-surface text-headline-sm">Color</span></span>
+<span class="font-label-uppercase text-label-uppercase text-outline uppercase">Enhancing Decor & Skin Tones</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Atmospheric Hero Image Canvas (Historic & Cathedral Warmth) -->
+<div class="mt-16 w-full relative group overflow-hidden rounded-xl bg-surface-container scroll-reveal scroll-up">
+<div class="relative h-[480px] md:h-[620px] w-full">
+<img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.02] filter brightness-[0.88] contrast-[1.08]" data-alt="A grand historical castle courtyard illuminated by an intricate, suspended ceiling canopy of thousands of micro-fairy lights and warm tungsten filament globes. Luxurious dinner tables stretch across the cobblestone pavilion surrounded by ancient stone archways, dressed with candelabras, crystal glassware, blush florals, and elegant guests in black-tie attire bathed in golden amber chiaroscuro glow." src="images/4.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Tactical HUD Overlay within Hero -->
+<div class="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10 md:right-10 flex flex-col md:flex-row md:items-end justify-between gap-4 pointer-events-none">
+<div class="bg-surface-container-lowest/85 backdrop-blur-md p-5 rounded-lg max-w-md pointer-events-auto">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span class="font-label-uppercase text-label-uppercase uppercase tracking-widest text-on-surface">Lighting Design Profile</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Elegant overhead lighting installed using safe, venue-friendly rigging. We use cool, inviting tones designed to perfectly mimic the natural, strength glow of daylight across the entire space.</p>
+</div>
+<div class="flex items-center gap-3 self-start md:self-auto bg-surface-container-lowest/85 backdrop-blur-md px-4 py-3 rounded-lg pointer-events-auto">
+<span class="font-label-uppercase text-label-uppercase text-primary uppercase">Design Focus:</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Daylight Glow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- SECTION 4: CRAFT STANDARDS & ENGINEERING SPECIFICS -->
+<section class="w-full py-24 bg-surface-container-low">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-uppercase text-label-uppercase uppercase text-primary tracking-[0.25em] block mb-2 scroll-reveal scroll-left">Our Commitment to Quality</span>
+<h2 class="font-headline-lg text-headline-lg md:text-display-lg text-on-surface uppercase tracking-tight scroll-reveal scroll-left">The Three Core Standards</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md scroll-reveal scroll-right">
+          Why event planners and clients trust IM Lightup to beautifully illuminate their most important moments.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container p-8 rounded-xl space-y-6 flex flex-col justify-between scroll-reveal scroll-up scroll-delay-1">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">visibility_off</span>
+</div>
+<span class="font-label-uppercase text-label-uppercase text-primary uppercase">Standard 01</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">Clean & Safe Setup</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              We believe the focus should be on your event, not our equipment. We carefully route, secure, and tape down all necessary cabling along walls and out of high-traffic areas to keep walkways safe and the setup looking incredibly neat.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded flex items-center justify-between font-label-uppercase text-label-uppercase text-outline">
+<span>FOCUS:</span>
+<span class="text-on-surface">NEAT & DISCREET ROUTING</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container p-8 rounded-xl space-y-6 flex flex-col justify-between scroll-reveal scroll-up scroll-delay-2">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<span class="font-label-uppercase text-label-uppercase text-primary uppercase">Standard 02</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">Reliable Operation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              We don't just set up and leave. Our lighting systems are thoroughly tested before the doors even open, and our dedicated on-site technicians stay at the control desk to ensure everything runs smoothly from the first guest arrival to the final dance.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded flex items-center justify-between font-label-uppercase text-label-uppercase text-outline">
+<span>FOCUS:</span>
+<span class="text-primary font-semibold">DEDICATED ON-SITE SUPPORT</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container p-8 rounded-xl space-y-6 flex flex-col justify-between scroll-reveal scroll-up scroll-delay-3">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">palette</span>
+</div>
+<span class="font-label-uppercase text-label-uppercase text-primary uppercase">Standard 03</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">Flattering, High-Quality Light</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Great lighting should make everything and everyone, look their absolute best. We use high-quality fixtures designed to bring out the natural, vibrant colors of your floral arrangements, venue decor, and most importantly, perfectly flatter skin tones for stunning event photos.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded flex items-center justify-between font-label-uppercase text-label-uppercase text-outline">
+<span>FOCUS:</span>
+<span class="text-on-surface font-semibold">BEAUTIFUL COLOR RENDERING</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: TESTIMONIAL & GRAND ATMOSPHERE VISUAL -->
+<section class="w-full py-24 bg-surface-container-lowest relative scroll-reveal scroll-fade">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin">
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container p-8 md:p-16 lg:p-24 flex flex-col justify-center min-h-[500px]">
+<!-- Full Bleed Atmospheric Background Image with Scrim -->
+<div class="absolute inset-0 z-0">
+<img alt="Historical Tuscan Villa Wedding Night Event" class="w-full h-full object-cover object-center filter brightness-50 contrast-125" src="images/review.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+</div>
+<!-- Testimonial Content -->
+<div class="relative z-10 max-w-2xl space-y-8">
+<span class="material-symbols-outlined text-primary text-5xl">format_quote</span>
+<blockquote class="text-[20px] md:text-[25px] font-headline-md text-on-surface font-light leading-relaxed">
+            "Our venue had absolutely no built-in lighting—it was just a dark, empty hall. IM Lightup stepped in and completely transformed the space from scratch. They created such a warm, elegant atmosphere, and we couldn't be happier with the result."</blockquote>
+<div class="flex items-center gap-4 pt-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center font-display-lg text-headline-sm text-primary">
+              O
+            </div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Ola Mummy</span>
+<span class="font-label-uppercase text-label-uppercase text-outline uppercase tracking-wider">Ibadan, Nigeria</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CALL TO ACTION & INQUIRY STAGE -->
+<section class="w-full py-24 bg-surface-container relative">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin">
+<div class="bg-surface-container-lowest p-8 md:p-16 rounded-2xl flex flex-col lg:flex-row lg:items-center justify-between gap-10">
+<div class="space-y-4 max-w-xl">
+<span class="font-label-uppercase text-label-uppercase uppercase text-primary tracking-[0.25em] block scroll-reveal scroll-left scroll-delay-1">Next Phase</span>
+<h2 class="font-headline-lg text-headline-lg md:text-display-lg text-on-surface uppercase tracking-tight scroll-reveal scroll-left scroll-delay-2">
+            Ready to Elevate Your Event?
+          </h2>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant font-light scroll-reveal scroll-left scroll-delay-3">
+            Let’s work together to create the perfect atmosphere. We are currently booking lighting services for weddings, corporate gatherings, and private celebrations.</p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="scroll-reveal scroll-right scroll-delay-1 px-8 py-4 rounded bg-primary text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider text-center hover:bg-primary-container transition-colors shadow-lg shadow-primary-container/20" data-path="get-a-quote" href="mailto:imlightup10@gmail.com">
+            Request Consultation
+          </a>
+<a class="scroll-reveal scroll-right scroll-delay-3 px-8 py-4 rounded bg-surface-container-high text-on-surface font-headline-sm text-headline-sm uppercase tracking-wider text-center hover:bg-surface-variant transition-colors" data-path="work" href="https://www.tiktok.com/@imlightup?_r=1&_t=ZS-9A55RjSE44S">
+            Explore Selected Work
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 pt-space-xl pb-16">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-xl">
+<div class="lg:col-span-5 flex flex-col justify-between pr-0 lg:pr-space-md">
+<div class="space-y-space-sm"><div class="flex items-center gap-3">
+<img alt="IM lightup Logo" class="h-9 w-auto object-contain" src="images/demo.png"/>
+<span class="font-headline-md text-headline-md text-on-surface uppercase tracking-wider">
+</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Transforming spaces through light, atmosphere, and precision visual engineering.</p>
+</div><div class="pt-8"><span class="font-label-uppercase text-label-uppercase uppercase text-outline tracking-[0.25em] block mb-2">Studio Presence</span>
+<p class="font-body-sm text-body-sm text-on-surface">•Ibadan, Nigeria</p></div></div><div class="lg:col-span-3 flex flex-col space-y-space-xs">
+<span class="font-label-uppercase text-label-uppercase uppercase text-outline tracking-[0.22em] mb-space-xs">Exploration</span>
+<nav class="flex flex-col space-y-2.5" data-active-classes="text-primary">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-200" data-path="Home" href="index.html">Home</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-200" data-path="services" href="services.html">Services</a>
+<a aria-current="page" class="font-body-sm transition-colors duration-200 text-primary" data-path="the-experience" href="experience.html">Experience</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-200" data-path="about" href="about.html">About</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-200" data-path="contact" href="contact.html">Contact</a>
+</nav></div><div class="lg:col-span-4 flex flex-col space-y-space-xs">
+<span class="font-label-uppercase text-label-uppercase uppercase text-outline tracking-[0.22em] mb-space-xs">Direct Channels</span>
+<div class="flex flex-col space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex flex-col"><span class="font-label-uppercase text-[10px] text-outline uppercase tracking-widest">General Inquiries</span>
+<a class="text-on-surface hover:text-primary transition-colors" href="mailto:imlightup10@gmail.com">imlightup10@gmail.com</a>
+</div><div class="flex flex-col"><span class="font-label-uppercase text-[10px] text-outline uppercase tracking-widest">Phone / Technical</span>
+<a class="text-on-surface hover:text-primary transition-colors" href="tel:+2349047277498">+234 904 727 7498</a>
+</div><div class="flex flex-col"><span class="font-label-uppercase text-[10px] text-outline uppercase tracking-widest">WhatsApp Urgent</span>
+<a class="text-on-surface hover:text-primary transition-colors" href="https://wa.me/+2349047277498">+234 904 727 7498</a></div>
+</div><div class="pt-4"><span class="font-label-uppercase text-label-uppercase uppercase text-outline tracking-[0.22em] block mb-2">Signal</span>
+<div class="flex items-center gap-6 font-label-uppercase text-label-uppercase uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="https://www.instagram.com/imlightup1?stkn=MXFib2k1MTQ0NjAxaw==">Instagram</a>
+<a class="hover:text-primary transition-colors" href="https://www.tiktok.com/@imlightup?_r=1&_t=ZS-9A55RjSE44S">TikTok</a></div></div></div></div>
+<div class="border-t border-outline-variant/15 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="font-body-sm text-body-sm text-outline">© 2026 IM lightup. All rights reserved.</p>
+<div class="flex items-center gap-8 font-label-uppercase text-label-uppercase tracking-widest uppercase text-outline">
+  <a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a>
+  <a class="hover:text-on-surface transition-colors" data-path="terms-of-production" href="#">Terms of Production</a>
+</div></div></div></footer>
+<script src="js/main.js"></script>
+</body></html>

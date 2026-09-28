@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Syne:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-bright":"#3a3939","surface-variant":"#353534","on-secondary-fixed":
+"#291800","background":"#131313","secondary-container":"#c5830c","tertiary":"#d4d0c5","on-secondary-fixed-variant":"#633f00","on-tertiary-container":"#48463f","surface-tint":
+"#71a3c1","surface-container":"#201f1f","primary-fixed":"#ffddb4","surface":"#131313","secondary-fixed":"#ffddb4","surface-container-low":"#1c1b1b","outline":"#9d8e7e",
+"surface-container-lowest":"#0e0e0e","on-tertiary-fixed":"#1d1c15","on-surface-variant":"#d4c4b2","on-tertiary-fixed-variant":"#49473f","outline-variant":"#504537",
+"on-surface":"#e5e2e1","inverse-surface":"#e5e2e1","tertiary-container":"#b8b4aa","surface-container-highest":"#353534","error":"#ffb4ab","on-primary-fixed":
+"#291800","primary-fixed-dim":"#71a3c1","primary-container":"#71a3c1","on-secondary-container":"#3c2500","on-error-container":"#ffdad6","error-container":"#93000a",
+"tertiary-fixed":"#e7e2d8","secondary-fixed-dim":"#71a3c1","on-secondary":"#452b00","secondary":"#71a3c1","on-primary":"#452b00","surface-dim":"#131313","primary":
+"#71a3c1","inverse-primary":"#825500","on-error":"#690005","on-tertiary":"#32302a","on-background":"#e5e2e1","inverse-on-surface":"#313030","surface-container-high":
+"#2a2a2a","on-primary-fixed-variant":"#633f00","on-primary-container":"#623f00","tertiary-fixed-dim":"#cac6bc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":
+"0.75rem","full":"9999px"},"spacing":{"space-xl":"4rem","space-lg":"2.5rem","gutter-mobile":"1rem","margin":"4rem","space-md":"1.5rem","space-sm":"1rem","gutter":"2rem",
+"margin-mobile":"1.5rem","space-xs":"0.5rem"},"fontFamily":{"display-lg-mobile":["Syne"],"display-xl":["Syne"],"body-lg":["Manrope"],"body-sm":["Manrope"],"headline-lg":["Syne"],"body-md":["Manrope"],"display-lg":["Syne"],"label-uppercase":["Manrope"],"label-regular":["Manrope"],"headline-sm":["Syne"],"headline-md":["Syne"],"display-xl-mobile":["Syne"]},"fontSize":{"display-lg-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-xl":["84px",{"lineHeight":"92px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"30px","letterSpacing":"0.01em","fontWeight":"300"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-uppercase":["11px",{"lineHeight":"16px","letterSpacing":"0.22em","fontWeight":"600"}],"label-regular":["13px",{"lineHeight":"18px","letterSpacing":"0.05em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"0em","fontWeight":"500"}],"display-xl-mobile":["44px",{"lineHeight":"48px","letterSpacing":"-0.02em",
+"fontWeight":"700"}]}}}};</script><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-md border-b border-outline-variant/30">
+
+    <div class="h-20 w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-space-sm">
+            <a class="flex items-center gap-3 group" data-path="work" href="index.html">
+                <img
+                    alt="IM lightup Logo"
+                    class="h-8 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+                    src="images/demo.png"
+                />
+                <span class="font-headline-sm text-headline-sm tracking-wide text-on-surface uppercase"></span>
+            </a>
+        </div>
+
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary border-b border-primary">
+
+            <a
+                class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface tracking-[0.22em] transition-colors duration-200 py-1"
+                data-path="work"
+                href="index.html"
+            >
+                Home
+            </a>
+
+            <a
+                aria-current="page"
+                class="font-label-uppercase uppercase tracking-[0.22em] transition-colors duration-200 py-1 text-primary border-b border-primary"
+                data-path="services"
+                href="services.html"
+            >
+                Services
+            </a>
+
+            <a
+                class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface tracking-[0.22em] transition-colors duration-200 py-1"
+                data-path="the-experience"
+                href="experience.html"
+            >
+                The Experience
+            </a>
+
+            <a
+                class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface tracking-[0.22em] transition-colors duration-200 py-1"
+                data-path="about"
+                href="about.html"
+            >
+                About
+            </a>
+
+            <a
+                class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface tracking-[0.22em] transition-colors duration-200 py-1"
+                data-path="contact"
+                href="contact.html"
+            >
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="flex items-center gap-space-sm">
+
+            <!-- DESKTOP QUOTE BUTTON -->
+            <a
+                class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded border border-[#71a3c1] bg-[#71a3c1] font-label-uppercase text-label-uppercase uppercase text-white tracking-[0.2em] transition-all duration-300 hover:bg-black hover:text-[#71a3c1] hover:border-[#71a3c1] hover:shadow-[0_0_24px_rgba(113,163,193,0.35)] cta-heartbeat"
+                data-path="get-a-quote"
+                href="#"
+            >
+                Get a Quote
+            </a>
+
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                id="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                class="lg:hidden flex items-center justify-center w-11 h-11 text-on-surface"
+            >
+
+                <span class="mobile-menu-icon flex flex-col gap-1.5">
+                    <span class="block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <div
+        id="mobile-menu"
+        class="lg:hidden hidden border-t border-outline-variant/30 bg-surface-container-lowest/95 backdrop-blur-md"
+    >
+
+        <nav class="flex flex-col px-margin-mobile py-5">
+
+            <a
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface-variant"
+                href="index.html"
+            >
+                Home
+            </a>
+
+            <a
+                aria-current="page"
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface"
+                href="services.html"
+            >
+                Services
+            </a>
+
+            <a
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface-variant"
+                href="experience.html"
+            >
+                The Experience
+            </a>
+
+            <a
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface-variant"
+                href="about.html"
+            >
+                About
+            </a>
+
+            <a
+                
+                class="mobile-nav-link py-4 font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] text-on-surface-variant"
+                href="contact.html"
+            >
+                Contact
+            </a>
+
+            <a
+                class="mt-3 inline-flex items-center justify-center px-6 py-3 rounded border border-[#71a3c1] bg-[#71a3c1] text-white font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] cta-heartbeat"
+                href="contact.html"
+            >
+                Get a Quote
+            </a>
+
+        </nav>
+
+    </div>
+
+</header><main class="w-full pt-20 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO HEADER -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin pt-space-lg md:pt-space-xl pb-space-lg overflow-hidden">
+<!-- Atmospheric Ambient Radiance Bloom -->
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 left-0 w-80 h-80 bg-secondary/5 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+<div class="flex flex-col gap-6 max-w-5xl">
+<div class="flex items-center gap-4">
+<span class="inline-block w-8 h-px bg-primary"></span>
+<span class="font-label-uppercase text-label-uppercase tracking-[0.24em] uppercase text-primary reveal-down  reveal-delay-1">01 / Capabilities &amp; Disciplines</span>
+</div>
+<h1 class="text-[50px] md:text-[95px] font-display-xl text-on-surface uppercase tracking-tight leading-[0.95] reveal-down  reveal-delay-2">
+        Thoughtful Design.<br/>
+<span class="text-[30px] md:text-[40px] text-on-surface-variant/70 italic font-light" >Beautiful Atmospheres.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl pt-2 reveal-down  reveal-delay-3">
+        We believe great lighting is more than just a technical setup, it is what sets the mood and defines the space. Whether we are highlighting a beautiful venue, setting the tone for a private celebration, or bringing energy to a live stage, we use high-quality fixtures and careful placement to turn everyday spaces into memorable experiences.</p>
+<!-- Discipline Quick Jump Chips -->
+<div class="flex flex-wrap gap-2 pt-6">
+<a class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary transition-colors duration-200 rounded text-[11px] font-label-uppercase uppercase tracking-[0.2em] flex items-center gap-2 reveal-right  reveal-delay-1" href="#event-lighting">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Event Lighting
+        </a>
+<a class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary transition-colors duration-200 rounded text-[11px] font-label-uppercase uppercase tracking-[0.2em] flex items-center gap-2 reveal-right  reveal-delay-2" href="#stage-concert">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Stage & Performance
+        </a>
+<a class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary transition-colors duration-200 rounded text-[11px] font-label-uppercase uppercase tracking-[0.2em] flex items-center gap-2 reveal-right  reveal-delay-3" href="#architectural-heritage">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Architectural & Ambient
+        </a>
+<a class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary transition-colors duration-200 rounded text-[11px] font-label-uppercase uppercase tracking-[0.2em] flex items-center gap-2 reveal-right  reveal-delay-4" href="#volumetric-fx">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Atmosphere & Effects
+        </a>
+<a class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary transition-colors duration-200 rounded text-[11px] font-label-uppercase uppercase tracking-[0.2em] flex items-center gap-2 reveal-right  reveal-delay-5" href="#hardware-matrix">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Professional Setup
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION 2: IN-DEPTH SERVICE BREAKDOWN -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-xl flex flex-col gap-24">
+<!-- Service 01: Private Celebrations & High-Fashion Galas -->
+<div class="scroll-mt-24 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center" id="event-lighting">
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="flex items-center gap-3 text-outline">
+<span class="font-label-uppercase text-label-uppercase tracking-[0.24em] text-primary scroll-reveal scroll-left">DISCIPLINE 01</span>
+<span class="text-xs scroll-reveal scroll-left">•</span>
+<span class="font-label-uppercase text-label-uppercase tracking-widest text-outline scroll-reveal scroll-left">WEDDINGS & PRIVATE EVENTS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase leading-tight scroll-reveal scroll-left">
+          Elegant & Bespoke Event Lighting
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant scroll-reveal scroll-left">
+          Crafted for beautiful weddings, corporate galas, and intimate private celebrations. We prioritize flattering light, clean and safe setups, and smooth transitions from the evening dinner to an energetic dance floor.
+        </p>
+<!-- Technical Points Specification Bento -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-1">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Color Quality</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">High CRI</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">True-to-life lighting that beautifully enhances natural skin tones and floral arrangements.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-2">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Pinspotting</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Targeted Illumination</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Clean, precise lighting to highlight centerpieces, stages, and key venue features.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-3">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Cabling Spec</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Discreet & Safe Setup</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Neatly routed, properly secured, and safely taped-down cabling that stays out of the way.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-4">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Atmosphere</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Warm & Inviting</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Adjustable, dynamic lighting to create a natural, welcoming glow throughout your event.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 pt-2 scroll-reveal scroll-left">
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-on-surface uppercase tracking-[0.2em] transition-colors" href="#contact-quote">
+            Inquire Event Rigging <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 relative group scroll-reveal scroll-right">
+<div class="relative overflow-hidden rounded bg-surface-container-high aspect-[16/10] shadow-2xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Luxurious historic opera house and grand ballroom banquet hall immersed in dramatic amber candlelight and soft theatrical warm spotlights, long dinner tables adorned with white floral arrangements and candelabras, ornate gilded arches and tiers, aristocratic guests enjoying dinner in deep chiaroscuro lighting." src="images/01.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-uppercase text-[10px] tracking-[0.2em] uppercase text-primary">Elegant Charity Gala</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Warm Ambient Glow & Focused Table Illumination</span>
+</div>
+<span class="px-3 py-1 bg-surface-container-lowest/80 backdrop-blur rounded text-[11px] font-label-uppercase text-outline tracking-widest uppercase">01</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service 02: Stage, Arena & Concert Production -->
+<div class="scroll-mt-24 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center" id="stage-concert">
+<div class="lg:col-span-7 order-2 lg:order-1 relative group scroll-reveal scroll-left">
+<div class="relative overflow-hidden rounded bg-surface-container-high aspect-[16/10] shadow-2xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Massive arena rock concert stage production with dense atmospheric haze pierced by sharp, synchronized geometrical laser beams in cyan and warm amber, silhouetted musicians and audience members with raised arms, suspended computerized lighting truss arrays blazing overhead in high-contrast theatrical chiaroscuro." src="images/olamummy/3.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-uppercase text-[10px] tracking-[0.2em] uppercase text-primary">Live Concert Stage</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Dynamic Moving Beams & Synchronized Colors</span>
+</div>
+<span class="px-3 py-1 bg-surface-container-lowest/80 backdrop-blur rounded text-[11px] font-label-uppercase text-outline tracking-widest uppercase">O2</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-6">
+<div class="flex items-center gap-3 text-outline">
+<span class="font-label-uppercase text-label-uppercase tracking-[0.24em] text-primary scroll-reveal scroll-right">DISCIPLINE 02</span>
+<span class="text-xs scroll-reveal scroll-right">•</span>
+<span class="font-label-uppercase text-label-uppercase tracking-widest text-outline scroll-reveal scroll-right">STAGE & LIVE MUSIC</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase leading-tight scroll-reveal scroll-right">
+          Concerts, Conferences & Live Performances
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant scroll-reveal scroll-right">
+          Dynamic stage lighting designed to bring high energy to the room. We deliver reliable, synchronized lighting setups using quality fixtures and stable support to elevate live bands, guest speakers, and stage performances.
+        </p>
+<!-- Technical Points Specification Bento -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-1">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Rigging & Support</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Heavy-Duty T-Stands</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Stable, secure, and reliable 3-meter stand setups to safely elevate and position your stage lighting.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-2">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Moving Heads</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Dynamic Stage Fixtures</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">High-impact moving beams featuring custom colors, patterns, and responsive movement to bring the stage to life.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-3">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Signal Distribution</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Reliable Data Splitters</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Clean, uninterrupted signal distribution ensuring every lighting fixture stays perfectly synced throughout the entire show.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-4">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Live Control</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Digital Console Operation</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Precise, real-time control at the mixing desk to ensure the energy of the lighting perfectly matches the flow of the event.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 pt-2 scroll-reveal scroll-up">
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-on-surface uppercase tracking-[0.2em] transition-colors" href="#contact-quote">
+            Request Tour Rider <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Service 03: Architectural & Ambient Monument Lighting -->
+<div class="scroll-mt-24 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center" id="architectural-heritage">
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="flex items-center gap-3 text-outline">
+<span class="font-label-uppercase text-label-uppercase tracking-[0.24em] text-primary scroll-reveal scroll-left">DISCIPLINE 03</span>
+<span class="text-xs scroll-reveal scroll-left">•</span>
+<span class="font-label-uppercase text-label-uppercase tracking-widest text-outline scroll-reveal scroll-left">ARCHITECTURAL & EXTERIOR</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase leading-tight scroll-reveal scroll-left">
+          Venue, Garden & Facade Lighting
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant scroll-reveal scroll-left">
+          Transforming the outside of your venue to match the magic inside. We use strategic lighting to highlight architectural details, pathways, and outdoor landscapes, creating a stunning first impression for your guests from the moment they arrive.</p>
+<!-- Technical Points Specification Bento -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-1">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Equipment Safety</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Outdoor-Ready Fixtures</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Reliable, weather-resistant lighting designed specifically for safe use in outdoor environments and garden setups.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-2">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Visual Impact</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Elegant Wall Washes & Uplighting</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Rich, warm lighting designed to beautifully highlight the natural textures, pillars, and unique features of your event space.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-3">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Venue Care</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Non-Invasive Installation</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Respectful, freestanding equipment setups using weighted bases that leave the venue completely untouched and undamaged.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-4">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Lighting Design</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Strategic Fixture Placement</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Carefully positioning each light to maximize the visual impact of your venue's unique layout and architecture.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 pt-2 scroll-reveal scroll-left">
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-on-surface uppercase tracking-[0.2em] transition-colors" href="#contact-quote">
+            Inquire Site Assessment <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 relative group scroll-reveal scroll-right">
+<div class="relative overflow-hidden rounded bg-surface-container-high aspect-[16/10] shadow-2xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Magnificent 16th-century gothic cathedral exterior illuminated at midnight with warm 2000K amber architectural floodlights casting sharp sculptural shadows across carved stone gargoyles and intricate stone tracery, dark brooding night sky with subtle atmospheric golden glow." src="images/03.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-uppercase text-[10px] tracking-[0.2em] uppercase text-primary">Outdoor Venue Illumination</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Rich Architectural Wall Wash & Facade Lighting</span>
+</div>
+<span class="px-3 py-1 bg-surface-container-lowest/80 backdrop-blur rounded text-[11px] font-label-uppercase text-outline tracking-widest uppercase">03</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service 04: Volumetric FX & Atmospheric Haze -->
+<div class="scroll-mt-24 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center" id="volumetric-fx">
+<div class="lg:col-span-7 order-2 lg:order-1 relative group scroll-reveal scroll-left">
+<div class="relative overflow-hidden rounded bg-surface-container-high aspect-[16/10] shadow-2xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Hypnotic volumetric lighting installation inside a brutalist concrete warehouse featuring suspended Astera wireless light tubes glowing in warm gold tones and icy white lasers piercing thick, velvety micro-haze that hangs suspended in geometric layers throughout the dark industrial interior." src="images/04.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-uppercase text-[10px] tracking-[0.2em] uppercase text-primary">Immersive Event Atmosphere</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Volumetric Haze & High-Energy Dance Floor Lighting</span>
+</div>
+<span class="px-3 py-1 bg-surface-container-lowest/80 backdrop-blur rounded text-[11px] font-label-uppercase text-outline tracking-widest uppercase">04</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-6">
+<div class="flex items-center gap-3 text-outline">
+<span class="font-label-uppercase text-label-uppercase tracking-[0.24em] text-primary scroll-reveal scroll-right">DISCIPLINE 04</span>
+<span class="text-xs scroll-reveal scroll-right">•</span>
+<span class="font-label-uppercase text-label-uppercase tracking-widest text-outline scroll-reveal scroll-right">ATMOSPHERE & EFFECTS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase leading-tight scroll-reveal scroll-right">
+          Haze, Fog & Visual Enhancements
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant scroll-reveal scroll-right">
+          Light needs a canvas to truly shine. We use safe, high-quality atmospheric effects to give our lighting depth, making beams of light visible in mid-air to bring stages and dance floors to life without overpowering the room.</p>
+<!-- Technical Points Specification Bento -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-1">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Haze Dispersion</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">High-Quality Stage Haze</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Fine, even haze that perfectly catches the light and enhances the atmosphere while remaining comfortable for your guests.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-2">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Special Effects</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Memorable Moments</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Optional atmospheric touches, like beautiful low-lying fog for a magical "dancing on the clouds" first dance or high-energy stage fog for live performances.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-3">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Visual Depth</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Volumetric Lighting</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Transforming a standard lighting setup into a fully immersive 3D experience by giving moving beams a visible pathway through the air.</p>
+</div>
+<div class="p-4 bg-surface-container rounded flex flex-col gap-1 scroll-reveal scroll-up scroll-delay-4">
+<span class="font-label-uppercase text-[10px] uppercase tracking-widest text-outline">Equipment Safety</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Venue-Friendly Operation</span>
+<p class="font-body-sm text-[12px] leading-tight text-on-surface-variant">Quiet, carefully monitored machines that integrate seamlessly into the event without disrupting speeches, dining, or venue smoke alarms.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 pt-2 scroll-reveal scroll-up">
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-on-surface uppercase tracking-[0.2em] transition-colors" href="#contact-quote">
+            Explore FX Architecture <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: TECHNICAL RIGGING & HARDWARE MATRIX -->
+<section class="w-full bg-surface-container-low py-space-xl scroll-mt-20" id="hardware-matrix">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex flex-col gap-12 scroll-reveal scroll-reveal">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex flex-col gap-2">
+<span class="font-label-uppercase text-label-uppercase tracking-[0.24em] uppercase text-primary">02 / Equipment & Reliability</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">Professional Gear & Presentation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            We use high-quality, reliable lighting equipment that is carefully maintained and thoroughly tested before every event. From secure transport to a clean, organized setup that blends discreetly into your venue, we ensure our gear looks just as professional as the lighting it produces.</p>
+</div>
+<div class="flex items-center gap-2 bg-surface-container px-4 py-2 rounded">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="font-label-uppercase text-[11px] uppercase tracking-wider text-on-surface">100% In-House Owned Fleet</span>
+</div>
+</div>
+<!-- Technical Spec Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/30 text-outline font-label-uppercase text-[11px] uppercase tracking-[0.2em]">
+<th class="py-4 px-4">Hardware Class</th>
+<th class="py-4 px-4">Primary Units</th>
+<th class="py-4 px-4">Key Specification</th>
+<th class="py-4 px-4">Optic &amp; Photometric Data</th>
+<th class="py-4 px-4">Rigging Finish</th>
+<th class="py-4 px-4 text-right">Deployment</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/15 font-body-sm text-body-sm text-on-surface-variant">
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Atmospheric Effects</td>
+<td class="py-5 px-4 text-primary font-medium">Haze Machine</td>
+<td class="py-5 px-4">Professional atmospheric haze generation</td>
+<td class="py-5 px-4">Even, controlled haze distribution</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Compact Black</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Events / stage</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Power Distribution</td>
+<td class="py-5 px-4 text-primary font-medium">Distro Box</td>
+<td class="py-5 px-4">Centralized power distribution for lighting systems</td>
+<td class="py-5 px-4">Stable power delivery across connected fixtures</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Heavy-Duty Finish</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">All Productions</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Lighting Support</td>
+<td class="py-5 px-4 text-primary font-medium">3-Meter T-Stand</td>
+<td class="py-5 px-4">3-meter adjustable lighting support</td>
+<td class="py-5 px-4">Stable fixture positioning</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Heavy-Duty Finish</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Events / Productions</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">LED Wash Lighting</td>
+<td class="py-5 px-4 text-primary font-medium">Par Light</td>
+<td class="py-5 px-4">Versatile LED stage and event lighting</td>
+<td class="py-5 px-4">Wide, even illumination</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Black Housing</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Events / Stages</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Lighting Support</td>
+<td class="py-5 px-4 text-primary font-medium">Crank Stand</td>
+<td class="py-5 px-4">Adjustable-height lighting support system</td>
+<td class="py-5 px-4">Flexible fixture positioning</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Heavy-Duty Finish</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Productions / Events</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">LED Lighting</td>
+<td class="py-5 px-4 text-primary font-medium">COB Light</td>
+<td class="py-5 px-4">High-output COB LED lighting</td>
+<td class="py-5 px-4">Focused, powerful illumination</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Black Housing</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Events / Photography</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Effects Lighting</td>
+<td class="py-5 px-4 text-primary font-medium">Strobe Light</td>
+<td class="py-5 px-4">High-intensity strobe effects</td>
+<td class="py-5 px-4">Rapid flash and dynamic illumination</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Black Housing</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Stages / Events</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Audio Processing</td>
+<td class="py-5 px-4 text-primary font-medium">Digital Mixer</td>
+<td class="py-5 px-4">Digital audio mixing and signal control</td>
+<td class="py-5 px-4">Clear, precise audio management</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Professional Finish</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Events / Live Sound</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Moving Head Lighting</td>
+<td class="py-5 px-4 text-primary font-medium">Boom 300 Moving Headt</td>
+<td class="py-5 px-4">Dynamic moving-head lighting fixture</td>
+<td class="py-5 px-4">Powerful beam and versatile movement</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Black Housing</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Stages / Events</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Truss Systems</td>
+<td class="py-5 px-4 text-primary font-medium">3-Meter Trusses</td>
+<td class="py-5 px-4">Modular overhead lighting support</td>
+<td class="py-5 px-4">Flexible fixture mounting</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Aluminium Finish</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Events / Events / Productions</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Signal Distribution</td>
+<td class="py-5 px-4 text-primary font-medium">8-Channel Splitter</td>
+<td class="py-5 px-4">8-channel signal distribution</td>
+<td class="py-5 px-4">Reliable signal routing</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Heavy-Duty Housing</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Lighting Systems</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Signal Distribution</td>
+<td class="py-5 px-4 text-primary font-medium">Splitter</td>
+<td class="py-5 px-4">Signal distribution for connected fixturesg</td>
+<td class="py-5 px-4">Stable signal transmission</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Heavy-Duty Housing</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">All Productions</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Connectors</td>
+<td class="py-5 px-4 text-primary font-medium">Male & Female Connectors</td>
+<td class="py-5 px-4">Secure equipment and cable connections</td>
+<td class="py-5 px-4">Reliable signal and power connection</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Professional Finish</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">All Productions</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Cabling</td>
+<td class="py-5 px-4 text-primary font-medium">Wire</td>
+<td class="py-5 px-4">Professional equipment cabling</td>
+<td class="py-5 px-4">Reliable power and signal transmission</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Durable Sheathing</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">All Productions</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Rigging Hardware</td>
+<td class="py-5 px-4 text-primary font-medium">G-Clamp Hanger</td>
+<td class="py-5 px-4">Secure fixture and equipment mounting</td>
+<td class="py-5 px-4">Stable overhead positioning</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Heavy-Duty Metal</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">Rigging / Staging</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Technical Equipment</td>
+<td class="py-5 px-4 text-primary font-medium">Tool Box</td>
+<td class="py-5 px-4">Essential tools for setup and maintenance</td>
+<td class="py-5 px-4">Organized equipment access</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Heavy-Duty Case</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">All Productions</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Signal Distribution</td>
+<td class="py-5 px-4 text-primary font-medium">Splitter</td>
+<td class="py-5 px-4">Reliable signal distribution between lighting equipment</td>
+<td class="py-5 px-4">Stable, clean signal transmission</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Heavy-Duty Housing</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">All Productions</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-5 px-4 font-headline-sm text-[16px] text-on-surface">Power Accessories</td>
+<td class="py-5 px-4 text-primary font-medium">Extension</td>
+<td class="py-5 px-4">Extended power connectivity for equipment</td>
+<td class="py-5 px-4">Reliable power delivery</td>
+<td class="py-5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest rounded text-[10px] font-label-uppercase uppercase">Heavy-Duty Cable</span></td>
+<td class="py-5 px-4 text-right font-mono text-outline">All Productions</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Real-time Console & DMX Protocol Interactive Simulation -->
+<div class="mt-4 p-6 bg-surface-container rounded flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">tune</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[17px] text-on-surface">Seamless Event Coordination - Synchronized Lighting & Audio</h4>
+<p class="font-body-sm text-body-sm text-outline">We work hand-in-hand with your DJ, band, or sound engineer to ensure the visual experience perfectly matches the music. Using reliable, industry-standard digital lighting control, we keep everything moving smoothly and in sync with the energy of the room.</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-mono text-xs text-primary bg-surface-container-highest px-3 py-1.5 rounded">Reliable DMX Control • Live Audio Sync • Smooth Team Integration</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 5: CTA / INQUIRY BANNER -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin pt-space-md pb-space-xl scroll-reveal scroll-up" id="contact-quote">
+<div class="relative overflow-hidden rounded bg-surface-container-high p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-10">
+<!-- Background Ambient Tungsten Glow -->
+<div class="absolute -bottom-20 -right-20 w-80 h-80 bg-primary/20 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="flex flex-col gap-4 max-w-2xl text-center lg:text-left z-10">
+<span class="font-label-uppercase text-label-uppercase tracking-[0.24em] uppercase text-primary">Event Consultation</span>
+<h2 class="font-headline-lg text-headline-lg md:text-[40px] text-on-surface uppercase leading-tight font-bold">
+          Have a vision in mind?<br/>
+<span class="text-on-surface-variant font-light italic">Let's bring it to life.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Share your event date, venue details, and ideas with us. Our team will review your space and provide a tailored lighting plan and a clear, straightforward quote to make your event look incredible.</p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 z-10 w-full lg:w-auto">
+<a class="w-full sm:w-auto px-8 py-4 bg-on-surface text-surface-container-lowest font-headline-sm text-[14px] uppercase tracking-[0.2em] font-semibold hover:bg-primary hover:text-on-primary-container transition-all duration-300 rounded text-center shadow-2xl" data-path="contact" href="mailto:imlightup10@gmail.com">
+          Request a Quote & Proposal
+        </a>
+<a class="w-full sm:w-auto px-6 py-4 bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] transition-colors rounded text-center" href="tel:+2349047277498">
+          Direct Line
+        </a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Smooth scroll behavior for internal discipline anchors
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        const targetElem = document.querySelector(targetId);
+        if (targetElem) {
+          e.preventDefault();
+          targetElem.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 pt-space-xl pb-16">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-xl">
+<div class="lg:col-span-5 flex flex-col justify-between pr-0 lg:pr-space-md">
+<div class="space-y-space-sm"><div class="flex items-center gap-3">
+<img alt="IM lightup Logo" class="h-9 w-auto object-contain" src="images/demo.png"/>
+<span class="font-headline-md text-headline-md text-on-surface uppercase tracking-wider">
+</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Transforming spaces through light, atmosphere, and precision visual engineering.</p>
+</div><div class="pt-8"><span class="font-label-uppercase text-label-uppercase uppercase text-outline tracking-[0.25em] block mb-2">Studio Presence</span>
+<p class="font-body-sm text-body-sm text-on-surface">•Ibadan, Nigeria</p></div></div><div class="lg:col-span-3 flex flex-col space-y-space-xs">
+<span class="font-label-uppercase text-label-uppercase uppercase text-outline tracking-[0.22em] mb-space-xs">Exploration</span>
+<nav class="flex flex-col space-y-2.5" data-active-classes="text-primary">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-200" data-path="Home" href="index.html">Home</a>
+<a aria-current="page" class="font-body-sm transition-colors duration-200 text-primary" data-path="services" href="services.html">Services</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-200" data-path="the-experience" href="experience.html">Experience</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-200" data-path="about" href="about.html">About</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-200" data-path="contact" href="contact.html">Contact</a>
+</nav></div><div class="lg:col-span-4 flex flex-col space-y-space-xs">
+<span class="font-label-uppercase text-label-uppercase uppercase text-outline tracking-[0.22em] mb-space-xs">Direct Channels</span>
+<div class="flex flex-col space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex flex-col"><span class="font-label-uppercase text-[10px] text-outline uppercase tracking-widest">General Inquiries</span>
+<a class="text-on-surface hover:text-primary transition-colors" href="mailto:imlightup10@gmail.com">imlightup10@gmail.com</a>
+</div><div class="flex flex-col"><span class="font-label-uppercase text-[10px] text-outline uppercase tracking-widest">Phone / Technical</span>
+<a class="text-on-surface hover:text-primary transition-colors" href="tel:+2349047277498">+234 904 727 7498</a>
+</div><div class="flex flex-col"><span class="font-label-uppercase text-[10px] text-outline uppercase tracking-widest">WhatsApp Urgent</span>
+<a class="text-on-surface hover:text-primary transition-colors" href="https://wa.me/+2349047277498">+234 904 727 7498</a></div>
+</div><div class="pt-4"><span class="font-label-uppercase text-label-uppercase uppercase text-outline tracking-[0.22em] block mb-2">Signal</span>
+<div class="flex items-center gap-6 font-label-uppercase text-label-uppercase uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="https://www.instagram.com/imlightup1?stkn=MXFib2k1MTQ0NjAxaw==">Instagram</a><a class="hover:text-primary transition-colors" href="#">Vimeo</a>
+<a class="hover:text-primary transition-colors" href="https://www.tiktok.com/@imlightup?_r=1&_t=ZS-9A55RjSE44S">TikTok</a></div></div></div></div>
+<div class="border-t border-outline-variant/15 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="font-body-sm text-body-sm text-outline">© 2026 IM lightup. All rights reserved.</p>
+<div class="flex items-center gap-8 font-label-uppercase text-label-uppercase tracking-widest uppercase text-outline">
+  <a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a>
+  <a class="hover:text-on-surface transition-colors" data-path="terms-of-production" href="#">Terms of Production</a>
+</div></div></div></footer>
+<script src="js/main.js"></script>
+</body></html>

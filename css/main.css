@@ -1,0 +1,356 @@
+/* =========================================================
+   I'M LIGHT UP — GLOBAL ANIMATION SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   1. HERO IMAGE — SLOW BREATHING
+   ========================================================= */
+
+@keyframes heroBreathing {
+    0%, 100% {
+        transform: scale(1.05);
+    }
+
+    50% {
+        transform: scale(1.09);
+    }
+}
+
+.hero-breathing {
+    animation: heroBreathing 5s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   2. CTA HEARTBEAT
+   ========================================================= */
+
+@keyframes ctaHeartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.03);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.03);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+}
+
+.cta-heartbeat {
+    animation: ctaHeartbeat 3.5s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   3. PHRASE SWITCH
+   ========================================================= */
+
+.phrase-switch {
+    display: inline-block;
+    transition: opacity 350ms ease;
+}
+
+.phrase-switch.phrase-changing {
+    opacity: 0;
+}
+
+
+/* =========================================================
+   4. HERO / PAGE LOAD REVEALS
+   These happen immediately when the page loads.
+   ========================================================= */
+
+.reveal,
+.reveal-up {
+    opacity: 0;
+    animation: revealUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-right {
+    opacity: 0;
+    animation: revealRight 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-left {
+    opacity: 0;
+    animation: revealLeft 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-down {
+    opacity: 0;
+    animation: revealDown 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-fade {
+    opacity: 0;
+    animation: revealFade 1.2s ease forwards;
+}
+
+.reveal-scale {
+    opacity: 0;
+    animation: revealScale 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
+/* =========================================================
+   5. HERO REVEAL DELAYS
+   ========================================================= */
+
+.reveal-delay-1 {
+    animation-delay: 0.15s;
+}
+
+.reveal-delay-2 {
+    animation-delay: 0.3s;
+}
+
+.reveal-delay-3 {
+    animation-delay: 0.45s;
+}
+
+.reveal-delay-4 {
+    animation-delay: 0.6s;
+}
+
+.reveal-delay-5 {
+    animation-delay: 0.75s;
+}
+
+.reveal-delay-6 {
+    animation-delay: 0.9s;
+}
+
+
+/* =========================================================
+   6. HERO KEYFRAMES
+   ========================================================= */
+
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes revealRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes revealLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes revealDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes revealFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes revealScale {
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================================
+   7. SCROLL REVEALS
+   These ONLY activate when the element enters the screen.
+   ========================================================= */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Default scroll reveal */
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   8. SCROLL DIRECTIONS
+   ========================================================= */
+
+.scroll-reveal.scroll-up {
+    transform: translateY(50px);
+}
+
+.scroll-reveal.scroll-down {
+    transform: translateY(-50px);
+}
+
+.scroll-reveal.scroll-right {
+    transform: translateX(60px);
+}
+
+.scroll-reveal.scroll-left {
+    transform: translateX(-60px);
+}
+
+.scroll-reveal.scroll-fade {
+    transform: none;
+}
+
+.scroll-reveal.scroll-scale {
+    transform: scale(0.94);
+}
+
+
+/* =========================================================
+   9. SCROLL VISIBLE STATES
+   ========================================================= */
+
+.scroll-reveal.scroll-up.is-visible,
+.scroll-reveal.scroll-down.is-visible,
+.scroll-reveal.scroll-right.is-visible,
+.scroll-reveal.scroll-left.is-visible {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.scroll-reveal.scroll-fade.is-visible {
+    opacity: 1;
+}
+
+.scroll-reveal.scroll-scale.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* =========================================================
+   10. SCROLL SPEED
+   ========================================================= */
+
+.scroll-fast {
+    transition-duration: 0.6s;
+}
+
+.scroll-slow {
+    transition-duration: 1.3s;
+}
+
+
+/* =========================================================
+   11. SCROLL DELAYS
+   ========================================================= */
+
+.scroll-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.scroll-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.scroll-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.scroll-delay-4 {
+    transition-delay: 0.4s;
+}
+
+.scroll-delay-5 {
+    transition-delay: 0.5s;
+}
+
+.scroll-delay-6 {
+    transition-delay: 0.6s;
+}
+
+
+/* =========================================================
+   12. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .reveal,
+    .reveal-up,
+    .reveal-right,
+    .reveal-left,
+    .reveal-down,
+    .reveal-fade,
+    .reveal-scale,
+    .hero-breathing,
+    .cta-heartbeat {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .scroll-reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .phrase-switch {
+        transition: none !important;
+    }
+}
